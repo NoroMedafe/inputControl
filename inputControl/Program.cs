@@ -13,14 +13,13 @@ namespace inputControl
             string stopWord = "exit";
             string userWord;
 
-            while (true)
+            do
             {
                 Console.Write("Введите любое слово: ");
                 userWord = Console.ReadLine();
                 userWord = userWord.ToLower();
-                if (userWord == stopWord)
-                    break;
-            }
+            }while (userWord!= stopWord);
+            
             Console.Clear();
             Console.WriteLine("Вы ввели стоп слово");
             Console.ReadKey();
